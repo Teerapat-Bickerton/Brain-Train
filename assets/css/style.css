@@ -16,7 +16,7 @@ body {
 
 /* Heading */
 .heading {
-    margin-top: 60px;
+    margin-top: 50px;
     text-align: center;
     font-size: 2.5rem;
 }
@@ -44,6 +44,11 @@ body {
     font-size: 1.5rem;
 }
 
+.game-title {
+    padding: 10px;
+}
+
+/* Used code from https://www.youtube.com/watch?v=riDzcEQbX6k&t=178s&ab_channel=WebDevSimplified */
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -62,4 +67,20 @@ body {
 
 .ans-btn:hover {
     border-color: white;
+}
+
+.ans-btn.correct {
+    background-color: #31b45d;
+    color: black;
+}
+
+.ans-btn.incorrect {
+    background-color: #b43131;
+    color: white;
+}
+
+.scores {
+    display: inline-block;
+    padding: 25px;
+    font-size: 1.2rem;
 }
