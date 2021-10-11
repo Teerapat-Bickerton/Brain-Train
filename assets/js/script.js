@@ -51,7 +51,8 @@ function showQuestion(question) {
         button.classList.add('btn');
         if (answer.correct) {
             button.dataset.correct = answer.correct;
-        }
+        } 
+
         button.addEventListener('click', selectAnswer);
         answerButtonsElement.appendChild(button)
     })
@@ -100,14 +101,6 @@ function clearStatusClass(element) {
 
     element.classList.remove('correct');
     element.classList.remove('incorrect');
-
-}
-
-function incrementScore() {
-
-}
-
-function incrementWrong() {
 
 }
 
