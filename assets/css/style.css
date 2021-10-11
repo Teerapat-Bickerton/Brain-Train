@@ -65,6 +65,15 @@ body {
     font-size: 1.5rem;
 }
 
+.start-btn {
+    margin: 10px;
+}
+
+
+.next-btn {
+    margin: 10px;
+}
+
 .btn:hover {
     border-color: white;
 }
