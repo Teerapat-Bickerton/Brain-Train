@@ -56,7 +56,7 @@ body {
     margin-top: 20px;
 }
 
-.ans-btn {
+.btn {
     background-color: #7EA1C4;
     border: 1px solid #1B365C;
     border-radius: 5px;
@@ -65,16 +65,16 @@ body {
     font-size: 1.5rem;
 }
 
-.ans-btn:hover {
+.btn:hover {
     border-color: white;
 }
 
-.ans-btn.correct {
+.btn.correct {
     background-color: #31b45d;
     color: black;
 }
 
-.ans-btn.incorrect {
+.btn.incorrect {
     background-color: #b43131;
     color: white;
 }
@@ -84,3 +84,7 @@ body {
     padding: 25px;
     font-size: 1.2rem;
 }
+
+.hide {
+    display: none;
+  }
