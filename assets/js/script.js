@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Used code from https://www.youtube.com/watch?v=riDzcEQbX6k&t=813s&ab_channel=WebDevSimplified
+// Starts game after with random ordered question after start button pressed 
+
 function runGame() {
 
     console.log('started');
@@ -35,12 +37,16 @@ function runGame() {
 
 }
 
+// Shows next question
+
 function displayNextQuestion() {
 
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 
 }
+
+// Changes question after each answer and changes answers in answer buttons
 
 function showQuestion(question) {
 
@@ -68,6 +74,8 @@ function resetState() {
 
   }
 
+// Check to see if selected button is correct answer
+
 function selectAnswer(e) {
 
     const selectedButton = e.target;
@@ -86,6 +94,8 @@ function selectAnswer(e) {
 
 }
 
+// Change buttons colours depending whether correct or not
+
 function setStatusClass(element, correct) {
 
     clearStatusClass(element);
@@ -97,12 +107,16 @@ function setStatusClass(element, correct) {
 
 }
 
+// Change button colours back to default
+
 function clearStatusClass(element) {
 
     element.classList.remove('correct');
     element.classList.remove('incorrect');
 
 }
+
+// Quiz questions
 
 const questions = [
     {
