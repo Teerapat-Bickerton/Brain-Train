@@ -1,4 +1,7 @@
+// Used code from https://www.youtube.com/watch?v=riDzcEQbX6k&t=813s&ab_channel=WebDevSimplified
 const shuffledQuestions, currentQuestionIndex;
+const questionElement = document.getElementById('question');
+const answerButtonsElement = document.getElementById('answer-buttons');
 
 // Wait for the DOM to finish loading before running game
 // Get the button elements and add event listeners to them
@@ -10,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 
-// Copied code from https://www.youtube.com/watch?v=riDzcEQbX6k&t=813s&ab_channel=WebDevSimplified
+// Used code from https://www.youtube.com/watch?v=riDzcEQbX6k&t=813s&ab_channel=WebDevSimplified
 function runGame() {
 
     console.log('started');
@@ -22,7 +25,13 @@ function runGame() {
 
 function displayNextQuestion() {
 
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+
 }
+
+function showQuestion(question) {
+
+} 
 
 function checkAnswer() {
 
