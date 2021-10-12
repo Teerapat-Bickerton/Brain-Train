@@ -1,7 +1,7 @@
 // Used code from https://www.youtube.com/watch?v=riDzcEQbX6k&t=813s&ab_channel=WebDevSimplified
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
-const questionBox = document.getElementById('question-box')
+const questionBox = document.getElementById('question-box');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
     nextButton.addEventListener('click', () => {
         currentQuestionIndex++;
         displayNextQuestion();
-    })
+    });
 
-})
+});
 
 
 // Used code from https://www.youtube.com/watch?v=riDzcEQbX6k&t=813s&ab_channel=WebDevSimplified
@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
 function runGame() {
 
     console.log('started');
-    startButton.classList.add('hide')
-    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    startButton.classList.add('hide');
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     questionBox.classList.remove('hide');
     displayNextQuestion();
@@ -60,16 +60,16 @@ function showQuestion(question) {
         } 
 
         button.addEventListener('click', selectAnswer);
-        answerButtonsElement.appendChild(button)
-    })
+        answerButtonsElement.appendChild(button);
+    });
 
 }
 
 function resetState() {
 
-    nextButton.classList.add('hide')
+    nextButton.classList.add('hide');
     while (answerButtonsElement.firstChild) {
-      answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+      answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
 
   }
@@ -83,7 +83,7 @@ function selectAnswer(e) {
     setStatusClass(document.body, correct);
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
-    })
+    });
 
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
@@ -299,4 +299,4 @@ const questions = [
             { text: '0', correct: true},
         ]
     },    
-]
+];

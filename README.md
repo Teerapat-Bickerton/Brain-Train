@@ -1,108 +1,105 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Brain Train
 
-Welcome Teerapat Bickerton,
+Brain train is a interactive general knowledge quiz.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Users will be able to test their general knowledge skills and see whether they got the correct answer or not.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[View the live project here](https://teerapat-bickerton.github.io/Brain-Train/)
 
-## Gitpod Reminders
+![Reponsive Design Image of Webpage](assets/images/responsive-design-image.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Features
 
-`python3 -m http.server`
+## Landing Page
 
-A blue button should appear to click: _Make Public_,
+* When the user arrives at the page, I wanted it to be a simple and straight forward layout where it is easy to tell what they need to do.
+* On arrival on the page the user is greeted with the name of the quiz, and it tells the user it's a general knowledge quiz and also a start button to begin the quiz.
 
-Another blue button should appear to click: _Open Browser_.
+![Image of Landing page](assets/images/brain-train-screenshot-1.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* Once the start button is pressed the first question and possible answers appear.
 
-A blue button should appear to click: _Make Public_,
+![Image of Question and Answers](assets/images/brain-train-screenshot-2.png)
 
-Another blue button should appear to click: _Open Browser_.
+# Wireframes
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Desktop screen wireframe
 
-To log into the Heroku toolbelt CLI:
+![Desktop Screen Wireframe](assets/images/wireframe-1.png)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* Mobile phone wireframe
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![Mobile Phone Wireframe](assets/images/wireframe-2.png)
 
-------
+# Technologies Used
 
-## Release History
+## Languages Used
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* HTML5
+* CSS3
+* JavaScript
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Frameworks, Libraries & Programs Used
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+1. Google Fonts
+    * Google Fonts was used to import the Nunito font which was used throughout the page. 
+2. Font Awesome
+    * Font Awesome was used to get the title logo.
+3. Git
+    * Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
+4. GitHub 
+    * GitHub is used to store the projects code after being pushed from Git.
+5. Affinity Photo
+    * Affinity Photo was used to resize, crop and edit photos for the README.md.
+6. TinyPNG.com 
+    * TinyPNG.com was used to compress images so the files were smaller.
+7. Moqups
+    * Moqups was used to create wireframes for the project.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+# Testing 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+The W3C Markup Validator, W3C CSS Validator and Extends Class JavaScript validator services were used to validate the project to ensure there were no syntax errors in the project.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* W3C Markup Validator Results
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![W3C Markup validator results](assets/images/validator-html.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+It showed an error for having an extra '</i>' in the heading which I have corrected now.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* W3C CSS Validator Results
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![W3C CSS validator results](assets/images/validator-css.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+It showed one warning that I didn't think would affect the running of the page.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* Extends Class JavaScript Validator Results
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Extends Class JavaScript Validator Results](assets/images/validator-javascript.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+There were a few warnings, but didn't seem to affect the running of the page.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* Accessibility 
 
-------
+![Lighthouse accessibility results](assets/images/validator-accessibility.png)
 
-## FAQ about the uptime script
+I confirmed using Lighthouse in devtools the fonts and colour chosen are accessible and legible.
 
-**Why have you added this script?**
+## Further Testing
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* The website was tested on Google Chrome, Microsoft Edge, Mozilla Firefox a Quora. It was not not tested on Safari as non of my family or friends have any Apple products.
+* The website was viewed on a variety of devices such as a Desktop, Laptop, Xiaomi Poco X3 Pro, Samsung A70 and Samsung A5.
 
-**How will this affect me?**
+The project was deployed to GitHub using the following steps...
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+1. Log in to GitHub and select the appropiate repository.
+2. At the top of the repository, select the "Settings" button.
+3. Find the "Pages" button and press.
+4. Under "Source", click on the dropdown menu and select "Main" branch.
+5. THe page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://teerapat-bickerton.github.io/Brain-Train/) in the "GitHub Pages" section.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+# Credits
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Code
 
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+* A lot code was used from https://www.youtube.com/watch?v=riDzcEQbX6k&t=1280s&ab_channel=WebDevSimplified.
